@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+@font-face {
+  font-family: 'Mercado';
+  font-style: normal;
+  src:url('/Resoures/font/Mercado.woff') format('woff');
+}
+@font-face {
+  font-family: 'Market_Deco';
+  font-style: normal;
+  src:url('/Resoures/font/Market_Deco.woff') format('woff');
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: #333;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  font-family: "Mercado", sans-serif;
+  font-optical-sizing: auto;
+  color: #0d0e11;
+  background-color: #ececec;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.topnav {
+  display: none;
+
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    background-color: #333;
+    padding-left: 1%;
+    height: 8%;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+.active {
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+}
+
+.topnav a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+#left_nav_bar {
+  float: left;
+  width: 20%;
+  height: 100%;
+  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  min-height: 750px;
+  min-width: 200px;
+  @media screen and (max-width: 1200px) {
+    display: none;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+#right_body {
+  width: 80%;
+  height: 100%;
+  min-height: 750px;
+  overflow-y: auto;
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
+}
+
+
+.menu_icon {
+  cursor: pointer;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+.unhidde {
+  display: block;
+}
+
+.left_nav_bar_header {
+  height: 30%;
+  width: 60%;
+}
+
+.left_nav_bar_header a {
+  margin-right: 100px;
+}
+
+.left_nav_bar_header p {
+  font-size: 1.5em;
+  text-align: left;
+  font-weight: bold;
+}
+
+
+#left_nav_bar a {
+  text-align: left;
+  text-decoration: none;
+  font-size: 1.3em;
+  width: 100%;
+  height: 7%;
+  text-indent: 2em;
+}
+.main_logo {
+  width: 100%;
+  height: 50%;
+  background-position: center center;
+  background-image: url("/Resoures/image/download.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transform: translate3d(0px, 0px, 0px);
+  background-color: #333;
+}
+
+.hst {
+  width: 100%;
+  height: 10%;
+  background-color: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}

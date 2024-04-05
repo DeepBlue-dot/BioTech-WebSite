@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  color: #0d0e11;
+}
+
+@font-face {
+  font-family: "Mercado";
+  font-style: normal;
+  src: url("/Resoures/font/Mercado.woff") format("woff");
+}
+@font-face {
+  font-family: "Market_Deco";
+  font-style: normal;
+  src: url("/Resoures/font/Market_Deco.woff") format("woff");
+}
+body {
+  font-family: "Mercado", sans-serif;
+  font-optical-sizing: auto;
+  color: #0d0e11;
+  background-color: #ececec;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/Resoures/image/background\ hair.png");
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  font-family: Market_Deco;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 14%;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 15px;
+  border-radius: 12px;
+  background-color: transparent;
+}
+.borderNav {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links li {
+  list-style: none;
+  margin: 0 12px;
+  cursor: pointer;
+}
+.nav-links li a {
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  text-decoration: none;
+}
+.nav-links li a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #40e5d7;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+.nav-links li a:hover:before {
+  width: 100%;
+}
+.nav-links li.center a:before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Logo-Title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 15%;
+  min-width: 70px;
+  gap: 5%;
+}
+
+.Logo-Title h2 {
+  padding-top: 15px;
+  @media screen and (max-width: 650px) {
+    font-size: calc(1em + 0.75%);
+  }
+}
+.menuIcon {
+  display: none;
+}
+
+.Contact_us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+  height: 100%;
+  min-width: 85px;
+}
+.Contact_us a {
+  font-size: calc(1em + 0.75%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  width: 70%;
+  height: 35%;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  @media screen and (max-width: 1150px) {
+    width: 100%;
+    margin-right: 5px;
+    height: 30%;
+  }
+}
+
+.Contact_us a {
+  color: initial;
+  transition: color 0.5s ease-in-out;
+}
+.Contact_us a:hover {
+  color: white;
+  transition: color 0.5s ease-in-out;
+}
+
+.Contact_us a::before {
+  background: #000000;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+  border-radius: 8px;
+}
+
+.Contact_us a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+footer {
+  background-color: transparent;
+  width: 100%;
+  height: 9%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+main {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 76%;
+}
+
+.main-Logo {
+  width: 7%;
+  min-width: 70px;
+
+}
+
+.mainTitle h1 {
+  text-align: center;
+}
+
+.mainTitle h3 {
+  font-family: "Market_Deco";
+  font-weight: lighter;
+  text-align: center;
+}
+.imageDiv {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.imageDiv::-webkit-scrollbar {
+  width: 0px;
+}
+
+.imageDiv img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  transition: 1s ease;
+  width: 12.5vw;
+  height: 12.5vw;
+}
+.imageDiv img:hover {
+  transform: scale(1.2);
+  transition: 1s ease;
+}
+
+@media screen and (max-width: 950px) {
+  .nav-links {
+    display: none;
+  }
+  .menuIcon {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Logo-Title img {
+    display: none;
+  }
+  body {
+    background-image: url("/Resoures/image/background\ hair\ phone.png");
+  }
+  .Contact_us a {
+    font-size: calc(0.7em + 1%);
+  }
+  nav {
+    height: 10%;
+  }
+}
