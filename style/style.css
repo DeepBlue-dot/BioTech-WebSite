@@ -9,7 +9,7 @@
 @font-face {
   font-family: "Mercado";
   font-style: normal;
-  src: url("/Resoures/font/Mercado.woff") format("woff");
+  src: url("../Resoures/font/Mercado.woff") format("woff");
 }
 @font-face {
   font-family: "Market_Deco";
