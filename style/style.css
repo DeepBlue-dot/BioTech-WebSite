@@ -14,7 +14,7 @@
 @font-face {
   font-family: "Market_Deco";
   font-style: normal;
-  src: url("/Resoures/font/Market_Deco.woff") format("woff");
+  src: url("../Resoures/font/Market_Deco.woff") format("woff");
 }
 body {
   font-family: "Mercado", sans-serif;
@@ -23,7 +23,7 @@ body {
   background-color: #ececec;
   width: 100%;
   height: 100vh;
-  background-image: url("/Resoures/image/background\ hair.webp");
+  background-image: url("../Resoures/image/background\ hair.webp");
   background-position: top;
   background-size: cover;
   display: flex;
@@ -237,7 +237,7 @@ main {
     display: none;
   }
   body {
-    background-image: url("/Resoures/image/background\ hair\ phone.webp");
+    background-image: url("../Resoures/image/background\ hair\ phone.webp");
   }
   .Contact_us a {
     font-size: calc(0.7em + 1%);
