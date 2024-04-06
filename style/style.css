@@ -177,7 +177,7 @@ main {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  height: 76%;
+  height: 77%;
 }
 
 .main-Logo {
@@ -199,9 +199,9 @@ main {
   width: 50vw;
   display: flex;
   align-items: center;
+  gap: 15px;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  max-height: 300px;
   overflow-y: scroll;
 }
 
@@ -217,6 +217,13 @@ main {
   transition: 1s ease;
   width: 12.5vw;
   height: 12.5vw;
+  min-width: 170px;
+  min-height: 170px;
+  @media screen and (max-width: 620px){
+    width: 73vw;
+    min-height: 150px;
+    object-position: center;
+  }
 }
 .imageDiv img:hover {
   transform: scale(1.2);
@@ -244,5 +251,8 @@ main {
   }
   nav {
     height: 10%;
+  }
+  .imageDiv {
+    width: 90vw;
   }
 }
