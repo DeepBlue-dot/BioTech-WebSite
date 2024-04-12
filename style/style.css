@@ -76,42 +76,6 @@ body {
   margin-left: 50px;
 }
 
-
-.contentText {
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.contentText h2 {
-  background: #478cff;
-  display: inline-block;
-  padding: 15px 10px;
-  text-transform: uppercase;
-  font-size: 24px;
-  color: #fff;
-}
-
-.contentText h3 {
-  text-transform: uppercase;
-  font-size: 18px;
-  margin: 0;
-  letter-spacing: 3px;
-}
-
-@media screen and (min-width: 768px) {
-  .contentText {
-    padding: 100px 180px;
-  }
-
-  .contentText h2 {
-    padding: 15px 35px;
-    font-size: 50px;
-  }
-
-  .contentText h3 {
-    font-size: 45px;
-  }
-}
 a {
   font-family: Market_Deco;
 }
@@ -335,5 +299,47 @@ main {
   }
   .imageDiv {
     width: 90vw;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    color: white;
+  }
+  body {
+    background-color: rgb(22, 22, 22);
+    background-image: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.5060399159663865) 0%,
+        rgba(11, 11, 11, 1) 80%,
+        rgba(11, 11, 11, 1) 100%
+      ),
+      url("../resource/image/home/background\ hair\ darkmode.webp");
+
+    @media screen and (max-width: 920px) {
+      background-image: radial-gradient(
+          circle,
+          rgba(0, 0, 0, 0.5060399159663865) 0%,
+          rgba(11, 11, 11, 1) 80%,
+          rgba(11, 11, 11, 1) 100%
+        ),
+        url("../resource/image/home/background\ hair\ phone\ darkmode.webp");
+    }
+  }
+  .main-Logo,
+  .Logo-Title img {
+    filter: invert(1);
+  }
+
+  .Contact_us a {
+    border: 1px solid #e7e7e7;
+    color: white;
+  }
+  .Contact_us a:hover {
+    color: rgb(0, 0, 0);
+    transition: color 0.5s ease-in-out;
+  }
+  .Contact_us a::before {
+    background: #ffffff;
   }
 }
