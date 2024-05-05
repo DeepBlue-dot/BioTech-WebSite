@@ -1,5 +1,7 @@
 # BioTech-WebSite
 
+https://deepblue-dot.github.io/BioTech-WebSite/
+
 This is the repository for the BioTech website. It contains all the necessary files and code to run the website.
 
 ## Installation
