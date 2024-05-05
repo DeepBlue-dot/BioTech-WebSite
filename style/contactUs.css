@@ -5,6 +5,8 @@
   }
 }
 
+
+
 a {
   text-decoration: none;
 }
@@ -43,7 +45,7 @@ section {
 
   h2 {
     font-size: clamp(3rem, 2.4286rem + 2.2857vw, 5rem);
-    color: #111;
+    color: #92a1cb;
     text-transform: capitalize;
     font-weight: 600;
     line-height: 1;
