@@ -78,10 +78,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
   width: 100%;
-  height: 12%;
+  height: 13%;
 }
 .nav-links {
   display: flex;
@@ -200,7 +198,17 @@ nav {
   transform-origin: left;
 }
 
+main {
+  height: 87%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 
+
+main::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar width */
+  height: 0; /* Remove scrollbar height */
+}
 
 @media screen and (max-width: 920px) {
   .nav-links {
@@ -230,8 +238,6 @@ nav {
 }
 
 @media (prefers-color-scheme: dark) {
-
-
   
   .Contact_us a {
     border: 1px solid #e7e7e7;
