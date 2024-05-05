@@ -1,6 +1,6 @@
 function openNav() {
     document.getElementById("sideMenu")
-        .style.width = "250px";
+        .style.width = "275px";
 }
  
 function closeNav() {
