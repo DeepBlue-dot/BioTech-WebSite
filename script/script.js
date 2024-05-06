@@ -11,7 +11,8 @@ function openNav() {
     overlay.style.width = "100%";
     overlay.style.height = "100%";
     overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)"; // Adjust opacity as needed
-    overlay.style.zIndex = "2"; // Ensure the overlay appears above other content
+    overlay.style.zIndex = "2";
+    overlay.addEventListener("click", closeNav);
     document.body.appendChild(overlay);
 }
 

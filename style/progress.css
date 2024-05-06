@@ -167,11 +167,4 @@ main {
   }
 }
 
-@media (max-width: 500px) {
-  .outer-container {
-    padding-top: 0px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-    padding-left: 20px;
-  }
-}
+
