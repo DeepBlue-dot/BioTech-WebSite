@@ -1,7 +1,7 @@
 main {
     font-family: Market_Deco;
     line-height: 1.6;
-    padding-top: 15vh;
+    padding-top: 5vh;
     color: #fff;
     background-image: radial-gradient(
         circle,
@@ -19,12 +19,16 @@ main {
   }
 
 .container {
+    text-align: justify;
+    background-color: #0d0e11d1;
     color: #fff;
     max-width: 1200px;
-    margin: 0 auto;
-    padding-left: 5vw ;
-    padding-right: 5vw ;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-left: 3vw;
+    padding-right: 3vw;
+    @media screen and (min-width: 900px) {
+        padding-left: 5vw;
+        padding-right: 5vw;
+      }
 }
 
 h1 {
@@ -45,7 +49,7 @@ h1 {
 
 .log-entry p,
 .log-entry ul {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.6;
 }
 
@@ -57,25 +61,13 @@ h1 {
 .images {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
     margin-top: 20px;
 }
 
 .images img {
-    width: calc(33.333% - 10px);
     max-width: 100%;
     height: auto;
-    border: 2px solid #ddd;
 }
 
-@media (max-width: 768px) {
-    .images img {
-        width: calc(50% - 10px);
-    }
-}
-
-@media (max-width: 480px) {
-    .images img {
-        width: 100%;
-    }
-}
