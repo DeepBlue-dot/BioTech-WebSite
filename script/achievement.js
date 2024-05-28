@@ -6,6 +6,10 @@ var swiper = new Swiper(".team-swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   breakpoints: {
     200: {
       slidesPerView: "auto",
