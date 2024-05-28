@@ -1,0 +1,81 @@
+main {
+    font-family: Market_Deco;
+    line-height: 1.6;
+    padding-top: 15vh;
+    color: #fff;
+    background-image: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.5060399159663865) 0%,
+        rgb(13, 14, 17) 80%,
+        rgb(13, 14, 17) 100%
+      ),
+      url("../resource/image/home/background\ hair\ darkmode.webp");
+    background-position: top;
+    background-repeat: repeat-y;
+    @media screen and (min-width: 900px) {
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+  }
+
+.container {
+    color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 5vw ;
+    padding-right: 5vw ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.log-entry {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.log-entry h2 {
+    font-size: 24px;
+    color: #92a1cb;
+}
+
+.log-entry p,
+.log-entry ul {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.log-entry ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.images img {
+    width: calc(33.333% - 10px);
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .images img {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .images img {
+        width: 100%;
+    }
+}

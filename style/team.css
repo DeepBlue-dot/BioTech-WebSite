@@ -6,8 +6,18 @@ main {
   font-family: Nunito, sans-serif;
 }
 
+.team-img {
+  width: 100vw;
+  height: 65vh;
+  background-image: url("../resource/image/team/IMG_6634.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
 .responsive-cell-block {
   min-height: 75px;
+
 }
 
 .text-blk {
