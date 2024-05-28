@@ -1,0 +1,41 @@
+main {
+  padding: 40px;
+}
+
+.header .title {
+  text-align: center;
+  font-size: 3em;
+  font-family: Market_Deco;
+  margin-bottom: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.garlic .content {
+  background-color: #fff;
+  color: #000;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 0.5fr auto;
+  height: 50vh;
+  column-gap: 5%;
+}
+
+.garlic .subsection-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  grid-row: span 3;
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-basis: 80%;
+  }
+  .image {
+    width: 200px;
+  }
+}
+
