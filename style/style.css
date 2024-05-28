@@ -251,7 +251,7 @@ main {
 
 .mainTitle h1 {
   text-align: center;
-  font-size: 2.4em;
+  font-size: 2em;
 }
 
 .mainTitle h3 {
@@ -295,6 +295,10 @@ main {
 }
 
 @media screen and (max-width: 920px) {
+  .mainTitle h1 {
+    text-align: center;
+    font-size: 1.5em;
+  }
   .nav-links {
     display: none;
   }
